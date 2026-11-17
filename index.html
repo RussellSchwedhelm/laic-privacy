@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAIC privacy policy and support</title>
+<style>
+  :root { color-scheme: light dark; --fg:#0d0d0d; --muted:#6e6e80; --bg:#ffffff; --accent:#4f46e5; --line:#e5e5e5; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#ececec; --muted:#a0a0a8; --bg:#212121; --accent:#818cf8; --line:#3a3a3a; } }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); margin: 0; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  p, li { margin: .5rem 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>LAIC privacy policy</h1>
+<p class="muted">LAIC (Local AI Chat) for iPhone. Last updated 17 November 2026.</p>
+
+<h2>In short</h2>
+<p>LAIC runs AI models on your iPhone. The developer of LAIC does not collect, receive or store any of your data. Your messages never leave your phone.</p>
+
+<h2>What LAIC does not do</h2>
+<ul>
+  <li>It has no accounts and no sign-in.</li>
+  <li>It has no analytics, no crash-reporting service and no advertising.</li>
+  <li>It does not track you, and it does not share data with data brokers or advertisers.</li>
+  <li>The developer runs no servers for the app.</li>
+</ul>
+
+<h2>What stays on your iPhone</h2>
+<p>Your chats, messages, settings and downloaded model files are stored on your iPhone only. Chats and settings can be included in your normal iPhone backups, depending on your own backup settings. Downloaded model files are excluded from backups. You can delete any chat, any model, or all chats from inside the app.</p>
+<p>If you add a Hugging Face access token, it is kept in the iOS Keychain on your iPhone. LAIC never writes it to logs.</p>
+
+<h2>What goes to Hugging Face</h2>
+<p>LAIC downloads models from Hugging Face (huggingface.co). When you search for a model, look one up, or download one, your iPhone sends a request to Hugging Face. Hugging Face receives ordinary request data such as your IP address and standard HTTP headers. If you have added an access token, it is sent to Hugging Face with those requests so gated models can be downloaded. Those requests are covered by <a href="https://huggingface.co/privacy">Hugging Face's own privacy policy</a>, not this one.</p>
+<p>If you paste a direct link to a model file, your iPhone sends requests to the website in that link. LAIC shows you the address before it downloads anything.</p>
+<p>Once a model is on your iPhone, chatting with it works without an internet connection. No chat content is sent over the network.</p>
+
+<h2>About the answers</h2>
+<p>AI models can be wrong, out of date or unsuitable. Some can produce content that is offensive. LAIC does not filter what a model writes. Do not rely on a model for medical, legal or financial decisions without checking with a qualified person. Each model has its own licence, which you can read on the model's page in the app before you download it.</p>
+
+<h2>Children</h2>
+<p>LAIC does not knowingly collect any information from anyone, including children. Because model output is not filtered, parents should decide whether the app suits their child.</p>
+
+<h2>Your rights in South Africa</h2>
+<p>The Protection of Personal Information Act (POPIA) applies. Because personal information stays on your iPhone and does not reach the developer, there is no personal information held by the developer to access, correct or delete. You control your chats and files directly in the app. For questions about this policy, use the support link below.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the way LAIC handles data changes, this page will be updated and the date at the top will change.</p>
+
+<hr>
+<h2 id="support">Support</h2>
+<p>For help with LAIC, or any privacy question, open an issue at <a href="https://github.com/RussellSchwedhelm/laic-privacy/issues">github.com/RussellSchwedhelm/laic-privacy/issues</a>. Please do not post the contents of your chats or any access tokens.</p>
+<p>Common questions:</p>
+<ul>
+  <li><strong>A model says "Too large".</strong> It needs more memory than your iPhone can give LAIC. Pick a smaller model, or lower the context length in Conversation settings.</li>
+  <li><strong>A download is waiting for Wi-Fi.</strong> Cellular downloads are off by default. You can change this in Settings.</li>
+  <li><strong>My iPhone is warm.</strong> LAIC slows down, and pauses replies if it gets very hot. Let the phone cool and try again.</li>
+</ul>
+</main>
+</body>
+</html>
